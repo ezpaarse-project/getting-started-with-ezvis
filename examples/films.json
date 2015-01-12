@@ -43,24 +43,22 @@
       "help"        : "The settings for this dashboard are describe in [films.json](https://github.com/madec-project/getting-started-with-visir/blob/master/examples/films.json)."
     },
     "chart" : {
-      "title"       : "Graphique",
-      "description" : "Détails de l'étude INSU",
-      "help"        : "Détails sur les graphiques. Mais ce ne sont que des informations générales, puisque ce sont les mêmes pour tous les graphiques."
+      "title"       : "Chart",
+      "description" : "Chart on films"
     },
     "documents" : {
-      "title"       : "Documents",
-      "description" : "Documents de l'étude INSU",
-      "help"        : "Explications sur les champs choisis?"
+      "title"       : "List",
+      "description" : "List of films",
+      "help"        : "Some films, with all fields of the CSV file. You can sort by one column (ex: Year), using the arrows."
     },
     "fields" : {
-      "title"       : "Champs",
-      "description" : "Champs de l'étude INSU",
-      "help"        : "Explications sur les champs."
+      "title"       : "Fields",
+      "description" : "Fields of the films records",
+      "help"        : "Actors field was split from original file. Each actor was separated one from another using a `/`."
     },
     "display" : {
-      "title"       : "Document",
-      "description" : "Affichage d'un document de l'étude INSU",
-      "help"        : "Explications sur un document (ses champs, leurs comptages, ...)."
+      "title"       : "Record",
+      "description" : "Film record"
     }
   },
   "dashboard": {
