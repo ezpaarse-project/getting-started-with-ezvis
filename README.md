@@ -33,4 +33,4 @@ Launch visir's web server:
 $ visir examples/films
 ```
 
-and point your browser to [http://localhost:3000/].
+and point your browser to [http://localhost:3000/](http://localhost:3000/).
