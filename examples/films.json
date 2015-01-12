@@ -1,0 +1,124 @@
+{
+  "title": "Films",
+  "collectionName": "films",
+  "description": "Several films to demontrate the usage of VISIR",
+  "documentFields": {
+    "title": {
+      "path": "content.json.title",
+      "label": "Title",
+      "visible": true,
+      "textizer": "trim()"
+    },
+    "year": {
+      "path": "content.json.year",
+      "label": "Year",
+      "visible": true,
+      "textizer": "trim()"
+    },
+    "director": {
+      "path": "content.json.director",
+      "label": "Director",
+      "visible": true,
+      "textizer": "trim()"
+    },
+    "actors": {
+      "path": "content.json.actors",
+      "separator": "/",
+      "visible": true,
+      "textizer": "trim()"
+    }
+  },
+  "display": {
+    "fields": {
+      "content.json.title": "Title",
+      "content.json.year": "Year",
+      "content.json.director": "Director",
+      "fields.actors": "Actors"
+    }
+  },
+  "dashboard": {
+    "charts": [
+      {
+        "field": "content.json.year",
+        "type": "histogram",
+        "title": "Per year",
+        "size": {
+          "height": 200
+        },
+        "facets": [
+          {
+            "path": "fields.actors",
+            "label": "Actors"
+          },
+          {
+            "path": "content.json.director",
+            "label": "Director"
+          }
+        ]
+      },
+      {
+        "field": "content.json.director",
+        "type": "horizontalbars",
+        "title": "Per director",
+        "size": {
+          "height": 450
+        },
+        "facets": [
+          {
+            "path": "content.json.year",
+            "label": "Year"
+          },
+          {
+            "path": "fields.actors",
+            "label": "Actors"
+          }
+        ]
+      },
+      {
+        "field": "fields.actors",
+        "type": "horizontalbars",
+        "title": "Per actor",
+        "maxItems": 12,
+        "size": {
+          "height": 450
+        },
+        "facets": [
+          {
+            "path": "content.json.year",
+            "label": "Year"
+          },
+          {
+            "path": "content.json.director",
+            "label": "Directors"
+          }
+        ]
+      },
+      {
+        "field": "content.json.year",
+        "type": "pie",
+        "title": "Years pie",
+        "legend": {
+          "position": "right",
+          "show": false
+        },
+         "facets": [
+          {
+            "path": "fields.actors",
+            "label": "Actors"
+          },
+          {
+            "path": "content.json.director",
+            "label": "Director"
+          }
+        ]
+      },
+      {
+        "type": "network",
+        "fields": [ "fields.actors" ],
+        "maxItems": 100000,
+        "title": "Actors net",
+        "help": "Links between actors."
+      }
+   ]
+  }
+}
