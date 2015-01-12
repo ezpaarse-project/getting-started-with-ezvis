@@ -36,6 +36,32 @@
       "fields.actors": "Actors"
     }
   },
+  "pages" : {
+    "index" : {
+      "title"       : "Dashboard",
+      "description" : "Dashboard of the films"
+    },
+    "chart" : {
+      "title"       : "Graphique",
+      "description" : "Détails de l'étude INSU",
+      "help"        : "Détails sur les graphiques. Mais ce ne sont que des informations générales, puisque ce sont les mêmes pour tous les graphiques."
+    },
+    "documents" : {
+      "title"       : "Documents",
+      "description" : "Documents de l'étude INSU",
+      "help"        : "Explications sur les champs choisis?"
+    },
+    "fields" : {
+      "title"       : "Champs",
+      "description" : "Champs de l'étude INSU",
+      "help"        : "Explications sur les champs."
+    },
+    "display" : {
+      "title"       : "Document",
+      "description" : "Affichage d'un document de l'étude INSU",
+      "help"        : "Explications sur un document (ses champs, leurs comptages, ...)."
+    }
+  },
   "dashboard": {
     "charts": [
       {
@@ -61,7 +87,8 @@
         "type": "horizontalbars",
         "title": "Per director",
         "size": {
-          "height": 450
+          "height": 450,
+          "columns": 6
         },
         "facets": [
           {
@@ -80,7 +107,8 @@
         "title": "Per actor",
         "maxItems": 12,
         "size": {
-          "height": 450
+          "height": 450,
+          "columns": 6
         },
         "facets": [
           {
