@@ -39,7 +39,8 @@
   "pages" : {
     "index" : {
       "title"       : "Dashboard",
-      "description" : "Dashboard of the films"
+      "description" : "Dashboard of the films",
+      "help"        : "The settings for this dashboard are describe in [films.json](https://github.com/madec-project/getting-started-with-visir/blob/master/examples/films.json)."
     },
     "chart" : {
       "title"       : "Graphique",
