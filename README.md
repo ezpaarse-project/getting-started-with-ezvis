@@ -17,7 +17,7 @@ $ npm install -g visir
 ## Get examples
 
 To get the examples, use `git clone` for this repository or get it from
-[releases](/madec-project/getting-started-with-visir/releases).
+[releases](https://github.com/madec-project/getting-started-with-visir/releases).
 
 Go in the repository:
 
