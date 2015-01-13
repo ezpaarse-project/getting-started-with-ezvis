@@ -1,6 +1,6 @@
 # Getting started with Visir
 
-This repository has examples to quickly see what can be done with
+This repository has an example to quickly see what can be done with
 [visir](https://github.com/madec-project/visir).
 
 ## Requirements
@@ -14,9 +14,9 @@ Then, open a shell, and type
 $ npm install -g visir
 ```
 
-## Get examples
+## Get example
 
-To get the examples, use `git clone` for this repository or get it from
+To get the example, use `git clone` for this repository or get it from
 [releases](https://github.com/madec-project/getting-started-with-visir/releases),
 or [zip](https://github.com/madec-project/getting-started-with-visir/archive/master.zip),
 or [tar.gz](https://github.com/madec-project/getting-started-with-visir/archive/master.tar.gz).
@@ -32,7 +32,7 @@ $ cd getting-started-with-visir
 Launch visir's web server:
 
 ```sh
-$ visir examples/films
+$ visir films
 ```
 
 and point your browser to [http://localhost:3000/](http://localhost:3000/).
