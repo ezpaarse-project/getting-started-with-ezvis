@@ -36,6 +36,45 @@
       "fields.actors": "Actors"
     }
   },
+  "corpusFields": {
+    "filmsnb": {
+      "visible": true,
+      "default": 0,
+      "label": "film(s)",
+      "fields": [
+        "wid"
+      ],
+      "selector": {},
+      "operator": "distinct",
+      "transform": "pluck('_id').size()",
+      "type": "Number",
+      "icon": "hand-o-right"
+    },
+    "beginYear": {
+      "default": 0,
+      "fields": [
+        "content.json.year"
+      ],
+      "operator": "distinct",
+      "transform": "pluck('_id').min()",
+      "type": "Number"
+    },
+    "endYear": {
+      "default": 0,
+      "fields": [
+        "content.json.year"
+      ],
+      "operator": "distinct",
+      "transform": "pluck('_id').max()",
+      "type": "Number"
+    },
+    "period": {
+      "visible": true,
+      "default": 0,
+      "template": "${beginYear}-${endYear}",
+      "icon": "calendar"
+    }
+  },
   "pages" : {
     "index" : {
       "title"       : "Dashboard",
