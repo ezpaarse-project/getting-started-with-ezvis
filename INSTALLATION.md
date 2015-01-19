@@ -52,4 +52,6 @@ To launch VISIR, you'll need to open the command prompt.
 
 ## MacOS
 
-Install [Brew](), and then use it to install [MongoDB]() and [nodejs]().
+Install [Homebrew](http://brew.sh/), and then use it to install
+[mongodb](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
+and [node](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#osx).

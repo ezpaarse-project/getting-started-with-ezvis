@@ -8,6 +8,8 @@ This repository has an example to quickly see what can be done with
 - [mongodb](http://docs.mongodb.org/manual/installation/) (installed and running)
 - [node](http://nodejs.org/) (just install it)
 
+See [installation suggestions](./INSTALLATION.md) for details.
+
 Then, open a shell, and type 
 
 ```sh
