@@ -37,10 +37,10 @@
     }
   },
   "corpusFields": {
-    "filmsnb": {
+    "filmsNb": {
       "visible": true,
       "default": 0,
-      "label": "film(s)",
+      "label": "films",
       "fields": [
         "wid"
       ],
@@ -73,6 +73,24 @@
       "default": 0,
       "template": "${beginYear}-${endYear}",
       "icon": "calendar"
+    },
+    "actorsNb": {
+      "visible": true,
+      "default": 0,
+      "label"  : "actors",
+      "fields" : [ "fields.actors" ],
+      "operator" : "distinct",
+      "transform": "pluck('_id').size()",
+      "type"   : "Number",
+      "icon"   : "star"
+    },
+    "actorsPerFilm": {
+      "visible": true,
+      "default": 0,
+      "label"  : "actors/film",
+      "compute": "actorsNb / filmsNb",
+      "type"   : "Number",
+      "icon"   : "star-half-o"
     }
   },
   "pages" : {
