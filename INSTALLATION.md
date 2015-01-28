@@ -65,7 +65,8 @@ On [nodejs's downloads page](http://nodejs.org/download/), get the Windows MSI I
 
 ### Command Prompt
 
-To launch VISIR, you'll need to open the command prompt.
+To launch VISIR, you'll need to open a new command prompt, then return to the [README](./README.md),
+at the `npm` step.
 
 ## MacOS
 
