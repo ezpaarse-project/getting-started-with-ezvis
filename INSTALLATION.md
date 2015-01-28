@@ -36,6 +36,12 @@ nodejs's version.
 
 In general, pay attention to the version of Windows you use (32-bit or 64-bit), and download an MSI installer.
 
+To find which version of Windows you are running, enter the following command in the Command Prompt:
+
+```
+wmic os get osarchitecture
+````
+
 ### MongoDB
 
 See [install MongoDB on Windows](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/).
