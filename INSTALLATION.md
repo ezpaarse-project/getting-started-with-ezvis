@@ -9,6 +9,10 @@ another.
 
 Below are some suggestions, according to the Operating System you are using.
 
+- [Linux](#linux)
+- [Windows](#windows)
+- [MacOS](#macos)
+
 ## Linux
 
 ### MongoDB
