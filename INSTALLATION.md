@@ -44,6 +44,8 @@ Don't forget to create a `\data\db` at the root of the partition where you
 installed Mongo, it will prevent the need to give parameters to the
 `mongod.exe`.
 
+Note: if you did not choose `C:\`, use the Custom install process of mongodb to set the right installation path. Example: `D:\mongodb`.
+
 Warning: only versions 2.4+ of Mongo were tested.
 
 ### NodeJS
