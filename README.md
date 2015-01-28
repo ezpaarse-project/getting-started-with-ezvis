@@ -1,12 +1,12 @@
 # Getting started with Visir
 
 This repository has an example to quickly see what can be done with
-[visir](https://github.com/madec-project/visir).
+[visir 4.1.0](https://github.com/madec-project/ezvisir/tree/v4.1.0).
 
 ## Requirements
 
 - [mongodb](http://docs.mongodb.org/manual/installation/) (installed and running)
-- [node](http://nodejs.org/) (just install it)
+- [node 0.10](http://nodejs.org/) (just install it)
 
 See [installation suggestions](./INSTALLATION.md) for details.
 
