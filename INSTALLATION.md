@@ -51,6 +51,8 @@ Warning: only versions 2.4+ of Mongo were tested.
 Running `bin\mongod.exe` (in the installation directory) may require that you give network
 authorizations (only the first time).
 
+Once MongoDb is running, you can skip the following steps to install NodeJS.
+
 ### NodeJS
 
 On [nodejs's downloads page](http://nodejs.org/download/), get the Windows MSI Installer, and use it.
