@@ -26,15 +26,15 @@ To get the example, use `git clone` for this repository, or get it from
 or [zip](https://github.com/madec-project/getting-started-with-visir/archive/master.zip),
 or [tar.gz](https://github.com/madec-project/getting-started-with-visir/archive/master.tar.gz) and unzip it.
 
-Then go in the repository:
+## Visit one example
+
+Then go into the repository from the Command Prompt:
 
 ```sh
 $ cd getting-started-with-visir
 ```
 
-## Visit one example
-
-Launch visir's web server:
+Then launch visir's web server:
 
 ```sh
 $ visir films
