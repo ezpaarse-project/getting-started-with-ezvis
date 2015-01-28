@@ -21,12 +21,12 @@ Some logs should scroll the window, and you should return to the prompt.
 
 ## Get example
 
-To get the example, use `git clone` for this repository or get it from
+To get the example, use `git clone` for this repository, or get it from
 [releases](https://github.com/madec-project/getting-started-with-visir/releases),
 or [zip](https://github.com/madec-project/getting-started-with-visir/archive/master.zip),
-or [tar.gz](https://github.com/madec-project/getting-started-with-visir/archive/master.tar.gz).
+or [tar.gz](https://github.com/madec-project/getting-started-with-visir/archive/master.tar.gz) and unzip it.
 
-Go in the repository:
+Then go in the repository:
 
 ```sh
 $ cd getting-started-with-visir
