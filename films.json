@@ -48,7 +48,7 @@
       "operator": "distinct",
       "transform": "pluck('_id').size()",
       "type": "Number",
-      "icon": "hand-o-right"
+      "icon": "film"
     },
     "beginYear": {
       "default": 0,
