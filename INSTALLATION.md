@@ -48,7 +48,8 @@ Note: if you did not choose `C:\`, use the Custom install process of mongodb to 
 
 Warning: only versions 2.4+ of Mongo were tested.
 
-Running `mongod.exe` may require that you give network authorizations (only the first time).
+Running `bin\mongod.exe` (in the installation directory) may require that you give network
+authorizations (only the first time).
 
 ### NodeJS
 
