@@ -16,6 +16,9 @@ Then, open a shell, and type
 $ npm install -g visir
 ```
 
+This step may take time as it gets files from the internet.
+Some logs should scroll the window, and you should return to the prompt.
+
 ## Get example
 
 To get the example, use `git clone` for this repository or get it from
