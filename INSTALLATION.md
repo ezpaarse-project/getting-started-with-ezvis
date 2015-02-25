@@ -9,6 +9,10 @@ another.
 
 Below are some suggestions, according to the Operating System you are using.
 
+- [Linux](#linux)
+- [Windows](#windows)
+- [MacOS](#macos)
+
 ## Linux
 
 ### MongoDB
@@ -32,6 +36,12 @@ nodejs's version.
 
 In general, pay attention to the version of Windows you use (32-bit or 64-bit), and download an MSI installer.
 
+To find which version of Windows you are running, enter the following command in the Command Prompt:
+
+```
+wmic os get osarchitecture
+````
+
 ### MongoDB
 
 See [install MongoDB on Windows](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/).
@@ -40,7 +50,14 @@ Don't forget to create a `\data\db` at the root of the partition where you
 installed Mongo, it will prevent the need to give parameters to the
 `mongod.exe`.
 
+Note: if you did not choose `C:\`, use the Custom install process of mongodb to set the right installation path. Example: `D:\mongodb`.
+
 Warning: only versions 2.4+ of Mongo were tested.
+
+Running `bin\mongod.exe` (in the installation directory) may require that you give network
+authorizations (only the first time).
+
+Once MongoDb is running, you can skip the following steps to install NodeJS.
 
 ### NodeJS
 
@@ -48,7 +65,8 @@ On [nodejs's downloads page](http://nodejs.org/download/), get the Windows MSI I
 
 ### Command Prompt
 
-To launch VISIR, you'll need to open the command prompt.
+To launch VISIR, you'll need to open a new command prompt, then return to the [README](./README.md),
+at the `npm` step.
 
 ## MacOS
 
