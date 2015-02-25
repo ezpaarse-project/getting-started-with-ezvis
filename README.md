@@ -1,7 +1,7 @@
-# Getting started with Visir
+# Getting started with ezVIS
 
 This repository has an example to quickly see what can be done with
-[visir](https://github.com/madec-project/visir).
+[ezvis](https://github.com/madec-project/ezvis).
 
 ## Requirements
 
@@ -13,7 +13,7 @@ See [installation suggestions](./INSTALLATION.md) for details.
 Then, open a shell, and type 
 
 ```sh
-$ npm install -g visir
+$ npm install -g ezvis
 ```
 
 ## Get example
@@ -31,10 +31,10 @@ $ cd getting-started-with-visir
 
 ## Visit one example
 
-Launch visir's web server:
+Launch ezVIS's web server:
 
 ```sh
-$ visir films
+$ ezvis films
 ```
 
 and point your browser to [http://localhost:3000/](http://localhost:3000/).
