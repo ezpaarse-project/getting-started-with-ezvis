@@ -22,16 +22,16 @@ Some logs should scroll the window, and you should return to the prompt.
 ## Get example
 
 To get the example, use `git clone` for this repository, or get it from
-[releases](https://github.com/madec-project/getting-started-with-visir/releases),
-or [zip](https://github.com/madec-project/getting-started-with-visir/archive/master.zip),
-or [tar.gz](https://github.com/madec-project/getting-started-with-visir/archive/master.tar.gz) and unzip it.
+[releases](https://github.com/madec-project/getting-started-with-ezvis/releases),
+or [zip](https://github.com/madec-project/getting-started-with-ezvis/archive/master.zip),
+or [tar.gz](https://github.com/madec-project/getting-started-with-ezvis/archive/master.tar.gz) and unzip it.
 
 ## Visit one example
 
 Then go into the repository from the Command Prompt:
 
 ```sh
-$ cd getting-started-with-visir
+$ cd getting-started-with-ezvis
 ```
 
 Then launch ezVIS's web server:
