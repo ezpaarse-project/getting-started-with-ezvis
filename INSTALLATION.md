@@ -2,7 +2,7 @@
 
 Installing Visir requires to have both
 [mongodb](http://docs.mongodb.org/manual/installation/) 2.4+ and
-[nodejs](http://nodejs.org/) 0.10 installed.
+[nodejs](http://nodejs.org/) 0.10 or 0.12 installed.
 
 Although their installation is simple, it is different from one environment to
 another.
@@ -27,7 +27,7 @@ avaible by default on Ubuntu 12.04, for example.
 
 ### NodeJS
 
-Use a 0.10.* version of [nodejs](http://nodejs.org/).
+Use a 0.10.* or a 0.12.* version of [nodejs](http://nodejs.org/).
 
 Tip: use [nvm](https://github.com/creationix/nvm) to be able to choose
 nodejs's version.
