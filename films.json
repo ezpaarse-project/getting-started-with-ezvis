@@ -3,94 +3,95 @@
   "collectionName": "films",
   "description": "Several films to demontrate the usage of VISIR",
   "documentFields": {
-    "title": {
-      "path": "content.json.title",
+    "$title": {
+      "visible": true,
       "label": "Title",
-      "visible": true,
-      "textizer": "trim()"
+      "path": "content.json.title"
     },
-    "year": {
-      "path": "content.json.year",
+    "$year": {
+      "visible": true,
       "label": "Year",
-      "visible": true,
-      "textizer": "trim()"
+      "path": "content.json.year"
     },
-    "director": {
-      "path": "content.json.director",
+    "$director": {
+      "visible": true,
       "label": "Director",
-      "visible": true,
-      "textizer": "trim()"
+      "path": "content.json.director"
     },
-    "actors": {
+    "$actors": {
+      "label": "Actors",
       "path": "content.json.actors",
-      "separator": "/",
-      "visible": true,
-      "textizer": "trim()"
+      "parseCSV" : "/",
+      "foreach": {
+        "trim": true
+      }
+    },
+    "$vactors": {
+      "label": "Actors",
+      "path": "actors",
+      "join": ", "
+    },
+    "$text": {
+      "get" : ["title", "year", "director", "actors"],
+      "join": "|"
     }
   },
   "display": {
     "fields": {
-      "content.json.title": "Title",
-      "content.json.year": "Year",
-      "content.json.director": "Director",
-      "fields.actors": "Actors"
+      "title": "Title",
+      "year": "Year",
+      "director": "Director",
+      "vactors": "Actors"
     }
   },
   "corpusFields": {
-    "filmsNb": {
+    "$filmsNb": {
       "visible": true,
-      "default": 0,
       "label": "films",
-      "fields": [
-        "wid"
-      ],
-      "selector": {},
-      "operator": "distinct",
-      "transform": "pluck('_id').size()",
-      "type": "Number",
-      "icon": "film"
+      "icon": "hand-o-right",
+      "$?": "local:///compute.json?operator=count&field=wid",
+      "parseJSON": true,
+      "get": "data.0.value",
+      "cast": "number"
     },
-    "beginYear": {
+    "$years": {
       "default": 0,
-      "fields": [
-        "content.json.year"
-      ],
-      "operator": "distinct",
-      "transform": "pluck('_id').min()",
-      "type": "Number"
+      "$?": "local:///compute.json?operator=distinct&field=year",
+      "parseJSON": true,
+      "select": ".data ._id",
+      "foreach": {
+        "cast": "number"
+      }
     },
-    "endYear": {
-      "default": 0,
-      "fields": [
-        "content.json.year"
-      ],
-      "operator": "distinct",
-      "transform": "pluck('_id').max()",
-      "type": "Number"
+    "$beginYear": {
+      "get": "years",
+      "min": true
     },
-    "period": {
+    "$endYear": {
+      "get": "years",
+      "max": true
+    },
+    "$period": {
       "visible": true,
-      "default": 0,
-      "template": "${beginYear}-${endYear}",
+      "template": "{{beginYear}}-{{endYear}}",
       "icon": "calendar"
     },
-    "actorsNb": {
+    "$actorsNb": {
       "visible": true,
-      "default": 0,
       "label"  : "actors",
-      "fields" : [ "fields.actors" ],
-      "operator" : "distinct",
-      "transform": "pluck('_id').size()",
-      "type"   : "Number",
-      "icon"   : "star"
+      "icon"   : "star",
+      "$?": "local:///compute.json?operator=distinct&field=actors",
+      "parseJSON": true,
+      "length": "true",
+      "cast"   : "number"
     },
-    "actorsPerFilm": {
+    "$actorsPerFilm": {
       "visible": true,
       "default": 0,
       "label"  : "actors/film",
+      "icon"   : "star-half-o",
       "compute": "actorsNb / filmsNb",
-      "type"   : "Number",
-      "icon"   : "star-half-o"
+      "cast"   : "number"
     }
   },
   "pages" : {
@@ -124,12 +125,13 @@
         "field": "content.json.year",
         "type": "histogram",
         "title": "Per year",
+        "color": "#bdd7e7",
         "size": {
           "height": 200
         },
         "facets": [
           {
-            "path": "fields.actors",
+            "path": "actors",
             "label": "Actors"
           },
           {
@@ -142,6 +144,7 @@
         "field": "content.json.director",
         "type": "horizontalbars",
         "title": "Per director",
+        "color": "#6baed6",
         "size": {
           "height": 450,
           "columns": 6
@@ -152,15 +155,16 @@
             "label": "Year"
           },
           {
-            "path": "fields.actors",
+            "path": "actors",
             "label": "Actors"
           }
         ]
       },
       {
-        "field": "fields.actors",
+        "field": "actors",
         "type": "horizontalbars",
         "title": "Per actor",
+        "color": "#2171b5",
         "maxItems": 12,
         "size": {
           "height": 450,
@@ -187,7 +191,7 @@
         },
          "facets": [
           {
-            "path": "fields.actors",
+            "path": "actors",
             "label": "Actors"
           },
           {
@@ -198,7 +202,7 @@
       },
       {
         "type": "network",
-        "fields": [ "fields.actors" ],
+        "fields": [ "actors" ],
         "maxItems": 100000,
         "title": "Actors net",
         "help": "Links between actors."

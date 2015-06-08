@@ -1,12 +1,12 @@
 # Getting started with ezVIS
 
 This repository has an example to quickly see what can be done with
-[ezvis](https://github.com/madec-project/ezvis/tree/).
+[ezvis](https://github.com/madec-project/ezvis/).
 
 ## Requirements
 
 - [mongodb](http://docs.mongodb.org/manual/installation/) (installed and running)
-- [node 0.10](http://nodejs.org/) (just install it)
+- [node](http://nodejs.org/) 0.10 or 0.12(just install it)
 
 See [installation suggestions](./INSTALLATION.md) for details.
 
@@ -34,7 +34,7 @@ Then go into the repository from the Command Prompt:
 $ cd getting-started-with-visir
 ```
 
-Then launch visir's web server:
+Then launch ezVIS's web server:
 
 ```sh
 $ ezvis films
