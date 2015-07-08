@@ -98,7 +98,7 @@
     "index" : {
       "title"       : "Dashboard",
       "description" : "Dashboard of the films",
-      "help"        : "The settings for this dashboard are describe in [films.json](https://github.com/madec-project/getting-started-with-visir/blob/master/films.json)."
+      "help"        : "The settings for this dashboard are in [films.json](https://github.com/madec-project/getting-started-with-visir/blob/master/films.json)."
     },
     "chart" : {
       "title"       : "Chart",
