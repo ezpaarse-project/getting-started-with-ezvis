@@ -6,7 +6,7 @@ This repository has an example to quickly see what can be done with
 ## Requirements
 
 - [mongodb](http://docs.mongodb.org/manual/installation/) (installed and running)
-- [node](http://nodejs.org/) 0.10 or 0.12(just install it)
+- [node](http://nodejs.org/) 0.10 or 0.12 (just install it)
 
 To install ezvis, open a shell, and type 
 
