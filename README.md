@@ -8,7 +8,7 @@ This repository has an example to quickly see what can be done with
 - [mongodb](http://docs.mongodb.org/manual/installation/) (installed and running)
 - [node](http://nodejs.org/) 0.10 or 0.12(just install it)
 
-Then, open a shell, and type 
+To install ezvis, open a shell, and type 
 
 ```sh
 $ npm install -g ezvis
@@ -19,19 +19,14 @@ Some logs should scroll the window, and you should return to the prompt.
 
 ## Get example
 
-To get the example, use `git clone` for this repository, or get it from
-[releases](https://github.com/ezpaarse-project/getting-started-with-ezvis/releases),
-or [zip](https://github.com/ezpaarse-project/getting-started-with-ezvis/archive/master.zip),
-or [tar.gz](https://github.com/ezpaarse-project/getting-started-with-ezvis/archive/master.tar.gz) and unzip it.
-
-ezPAARSE results (CSV data) are located in this folder: 
+ezPAARSE anonymous results (CSV data) are embeded in this repository and are located in this folder: 
 
 ```
 ezpaarse/
 └── ec-3j-bibliovie-anonymes.csv
 ```
 
-## Visit one example
+## Run ezvis
 
 Then go into the repository from the Command Prompt:
 
