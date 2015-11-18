@@ -40,4 +40,4 @@ Then launch ezVIS's web server:
 $ ezvis ezpaarse
 ```
 
-and point your browser to [http://localhost:3000/](http://localhost:3000/).
+and point your browser to [http://localhost:35269/](http://localhost:35269/).
